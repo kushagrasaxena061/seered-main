@@ -1,6 +1,8 @@
 import './globals.css'
 import AuthContext from './context/AuthContext'
 import ToasterContext from './context/ToasterContext'
+import Hero from './(site)/components/Hero/Hero'
+import Footer from './(site)/components/Footer'
 
 export const metadata = {
   title: 'Seered',
@@ -18,6 +20,7 @@ export default function RootLayout({
         <AuthContext>
           <ToasterContext />
           {children}
+          <Footer/>
         </AuthContext>
       </body>
     </html>
