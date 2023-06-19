@@ -35,7 +35,7 @@ const Hero = () => {
                         <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pt-48 lg:pb-24">
                             <h1 className="text-red-600 mb-4 text-4xl font-bold sm:text-5xl md:mb-8 md:text-6xl">Where Melodies lies,<br />NFTs Reside.</h1>
                             <p className="max-w-md leading-relaxed text-white xl:text-lg mb-8">Embark on a musical journey like never before. Explore, buy, sell, and trade NFTs while enjoying your favorite tunes.</p>
-                            <button onClick={() => router.push('/auth')} className="hidden md:inline items-center  bg-red-600 border-0 p-4 focus:outline-none hover:bg-red-500 rounded-lg text-lg text-white font-bold md:mt-0">Sign Up
+                            <button onClick={() => router.push('/auth')} className="md:hidden items-center  bg-red-600 border-0 p-4 focus:outline-none hover:bg-red-500 rounded-lg text-lg text-white font-bold md:mt-0">Sign Up
                         </button>
                         </div>
                         <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
