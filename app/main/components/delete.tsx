@@ -1,7 +1,8 @@
-import Image from "next/image";
-import AuthForm from "../(site)/components/AuthForm";
+import React from 'react'
+import Image from 'next/image'
 
-const Auth = () => {
+
+export default function Delete() {
   return (
     <div 
       className="
@@ -36,9 +37,6 @@ const Auth = () => {
             Log in to your account
         </h2>
       </div>
-      <AuthForm />      
   </div>
   )
 }
-
-export default Auth;

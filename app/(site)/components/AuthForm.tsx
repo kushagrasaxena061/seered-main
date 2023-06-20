@@ -3,7 +3,7 @@
 import axios from "axios";
 import { signIn, useSession } from 'next-auth/react';
 import { useCallback, useEffect, useState } from 'react';
-import { BsGithub, BsGoogle  } from 'react-icons/bs';
+import { BsGoogle  } from 'react-icons/bs';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from "next/navigation";
 
@@ -22,7 +22,7 @@ const AuthForm = () => {
 
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      router.push('/')
+      router.push('/main')
     }
   }, [session?.status, router]);
 
@@ -107,8 +107,8 @@ const AuthForm = () => {
   return ( 
     <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
       <div 
-        className="
-        bg-white
+        //bg-gradient-to-t from-zinc-500 from-10%  to-zinc-700 to-70%
+        className=" bg-black
           px-4
           py-8
           shadow
@@ -165,10 +165,10 @@ const AuthForm = () => {
                 items-center
               "
             >
-              <div className="w-full border-t border-gray-300" />
+              <div className="w-full border-t " />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="bg-white px-2 text-gray-500">
+              <span className="bg-black px-2 text-white">
                 Or continue with
               </span>
             </div>
@@ -193,7 +193,7 @@ const AuthForm = () => {
           "
         >
           <div>
-            {variant === 'LOGIN' ? 'New to Messenger?' : 'Already have an account?'} 
+            {variant === 'LOGIN' ? 'New to Seered?' : 'Already have an account?'} 
           </div>
           <div 
             onClick={toggleVariant} 

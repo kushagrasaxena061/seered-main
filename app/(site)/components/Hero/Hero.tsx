@@ -105,7 +105,7 @@ const Hero = () => {
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">Unleash the future of music streaming and embrace the dawn of a transformative era. Immerse yourself in boundless innovation as NFT technology unlocks limitless possibilities, reshaping your musical journey. Don't hesitate—seize this extraordinary opportunity to revolutionize your audio experience. Sign up now and embark on a remarkable musical odyssey.</p>
                     </div>
 
-                    <button className="flex mx-auto mt-16 w-1/6 text-xl justify-center bg-indigo-500  py-3 px-8 items-center border-0 p-4 focus:outline-none  rounded-lg font-bold  md:mt-0 button bg-gradient-to-r from-cyan-400 to-red-500 hover:from-pink-500 hover:to-yellow-500 text-black hover:text-white">SignIn</button>
+                    <button onClick={() => router.push('/auth')} className="flex mx-auto mt-16 w-1/6 text-xl justify-center bg-indigo-500  py-3 px-8 items-center border-0 p-4 focus:outline-none  rounded-lg font-bold  md:mt-0 button bg-gradient-to-r from-cyan-400 to-red-500 hover:from-pink-500 hover:to-yellow-500 text-black hover:text-white">SignIn</button>
                 </div>
             </section>
             <section className="text-gray-600 body-font">
