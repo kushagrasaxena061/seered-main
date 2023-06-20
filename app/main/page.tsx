@@ -2,17 +2,19 @@
 import { signOut, useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import LoadingModal from '../modals/LoadingModal'
 import Header from './components/Header'
 import ListItem from './components/ListItem'
 
 const page = () => {
+  
   const { data: session, status } = useSession()
   const router = useRouter()
+
   if (status === "unauthenticated") {
     router.push('/')
   }
 
+  
 
   return (
     <div

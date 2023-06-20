@@ -3,7 +3,6 @@
 import './globals.css'
 import AuthContext from './context/AuthContext'
 import ToasterContext from './context/ToasterContext'
-import Sidebar from './main/components/Sidebar'
 
 
 
@@ -21,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthContext>
-          <ToasterContext />
-          {children}
-        </AuthContext>
+          <AuthContext>
+            <ToasterContext />
+            {children}
+          </AuthContext>
       </body>
     </html>
   )

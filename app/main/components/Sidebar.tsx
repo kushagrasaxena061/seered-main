@@ -20,8 +20,8 @@ const Sidebar = ({ children }: SidebarProps) => {
     {
       icon: HiHome,
       label: 'Home',
-      active: pathname !== '/search',
-      href: '/'
+      active: pathname !== '/main',
+      href: '/main'
     },
     {
       icon: BiSearch,
